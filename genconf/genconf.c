@@ -3,8 +3,6 @@
 #include <string.h>
 #include <ncurses.h>
 #include "listprop.h"
-#include "streamutils.h"
-#include "strutils.h"
 
 
 int main(int argc, char **argv) {
