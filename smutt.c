@@ -3,9 +3,6 @@
 #include <stdlib.h>
 #include <ncurses.h>
 
-char *getpass() {
-  
-}
 int main(int argc, const char **argv) {
   char *profile = malloc(80*sizeof(char));
   char *passwd = malloc(80*sizeof(char));
