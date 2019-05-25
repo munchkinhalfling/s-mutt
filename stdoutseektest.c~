@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+extern void *malloc(int);
+extern void free(void *);
+
+int main(int argc, char **argv) {
+  char *mypass = malloc(80);
+  char c;
+  
+  for(register int i = 0;;i++) {
+    c = getc(stdin);
+    if(c == 0x0A) break; // Enter
+    if(c == 8) { // Delete
+      fseek(stdout, ftell(stdout) - 1, SEEK_BEG);
+      putc(stdout, ' ');
+      continue;
+    }
+    putc(stdout, '*');
+    *(mypass+i) = c;
+  }
+
+  printf("The password you entered was %s.", mypass);
+}

@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ncurses.h>
 #include "listprop.h"
-
+#include "strutils.h"
 
 int main(int argc, char **argv) {
   char *properties[][2] = {
