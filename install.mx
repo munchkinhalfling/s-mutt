@@ -10,5 +10,5 @@ gcc genconf/genconf.c -o bin/smutt.genconf -lncurses -I./genconf
 echo Installing...
 echo PATH=\$PATH:`pwd`/bin >> $HOME/.bashrc
 echo Finishing...
-source $HOME/.bashrc
+source ~/.bashrc
 echo Done!
