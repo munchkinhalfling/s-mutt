@@ -107,19 +107,19 @@ configure:2741: checking for gcc option to accept ISO C89
 configure:2804: gcc  -c -g -O2  conftest.c >&5
 configure:2804: $? = 0
 configure:2817: result: none needed
-configure:2841: checking for wgetch in -lncurses
-configure:2866: gcc -o conftest -g -O2   conftest.c -lncurses   >&5
-configure:2866: $? = 0
-configure:2875: result: yes
-configure:2893: checking how to run the C preprocessor
-configure:2924: gcc -E  conftest.c
-configure:2924: $? = 0
-configure:2938: gcc -E  conftest.c
+configure:2840: checking for wgetch in -lncurses
+configure:2865: gcc -o conftest -g -O2   conftest.c -lncurses   >&5
+configure:2865: $? = 0
+configure:2874: result: yes
+configure:2892: checking how to run the C preprocessor
+configure:2923: gcc -E  conftest.c
+configure:2923: $? = 0
+configure:2937: gcc -E  conftest.c
 conftest.c:10:10: fatal error: ac_nonexistent.h: No such file or directory
    10 | #include <ac_nonexistent.h>
       |          ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-configure:2938: $? = 1
+configure:2937: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "FULL-PACKAGE-NAME"
@@ -131,15 +131,15 @@ configure: failed program was:
 | #define HAVE_LIBNCURSES 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:2963: result: gcc -E
-configure:2983: gcc -E  conftest.c
-configure:2983: $? = 0
-configure:2997: gcc -E  conftest.c
+configure:2962: result: gcc -E
+configure:2982: gcc -E  conftest.c
+configure:2982: $? = 0
+configure:2996: gcc -E  conftest.c
 conftest.c:10:10: fatal error: ac_nonexistent.h: No such file or directory
    10 | #include <ac_nonexistent.h>
       |          ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-configure:2997: $? = 1
+configure:2996: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "FULL-PACKAGE-NAME"
@@ -151,71 +151,91 @@ configure: failed program was:
 | #define HAVE_LIBNCURSES 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3026: checking for grep that handles long lines and -e
-configure:3084: result: /bin/grep
-configure:3089: checking for egrep
-configure:3151: result: /bin/grep -E
-configure:3156: checking for ANSI C header files
-configure:3176: gcc -c -g -O2  conftest.c >&5
-configure:3176: $? = 0
-configure:3249: gcc -o conftest -g -O2   conftest.c -lncurses  >&5
-configure:3249: $? = 0
-configure:3249: ./conftest
-configure:3249: $? = 0
-configure:3260: result: yes
-configure:3273: checking for sys/types.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for sys/stat.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for stdlib.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for string.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for memory.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for strings.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for inttypes.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for stdint.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3273: checking for unistd.h
-configure:3273: gcc -c -g -O2  conftest.c >&5
-configure:3273: $? = 0
-configure:3273: result: yes
-configure:3288: checking for stdlib.h
-configure:3288: result: yes
-configure:3288: checking for string.h
-configure:3288: result: yes
-configure:3300: checking for stdbool.h that conforms to C99
-configure:3367: gcc -c -g -O2  conftest.c >&5
-configure:3367: $? = 0
-configure:3374: result: yes
-configure:3376: checking for _Bool
-configure:3376: gcc -c -g -O2  conftest.c >&5
-configure:3376: $? = 0
-configure:3376: gcc -c -g -O2  conftest.c >&5
+configure:3025: checking for grep that handles long lines and -e
+configure:3083: result: /bin/grep
+configure:3088: checking for egrep
+configure:3150: result: /bin/grep -E
+configure:3155: checking for ANSI C header files
+configure:3175: gcc -c -g -O2  conftest.c >&5
+configure:3175: $? = 0
+configure:3248: gcc -o conftest -g -O2   conftest.c -lncurses  >&5
+configure:3248: $? = 0
+configure:3248: ./conftest
+configure:3248: $? = 0
+configure:3259: result: yes
+configure:3272: checking for sys/types.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for sys/stat.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for stdlib.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for string.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for memory.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for strings.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for inttypes.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for stdint.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3272: checking for unistd.h
+configure:3272: gcc -c -g -O2  conftest.c >&5
+configure:3272: $? = 0
+configure:3272: result: yes
+configure:3287: checking for stdlib.h
+configure:3287: result: yes
+configure:3287: checking for string.h
+configure:3287: result: yes
+configure:3287: checking stdio.h usability
+configure:3287: gcc -c -g -O2  conftest.c >&5
+configure:3287: $? = 0
+configure:3287: result: yes
+configure:3287: checking stdio.h presence
+configure:3287: gcc -E  conftest.c
+configure:3287: $? = 0
+configure:3287: result: yes
+configure:3287: checking for stdio.h
+configure:3287: result: yes
+configure:3287: checking ncurses.h usability
+configure:3287: gcc -c -g -O2  conftest.c >&5
+configure:3287: $? = 0
+configure:3287: result: yes
+configure:3287: checking ncurses.h presence
+configure:3287: gcc -E  conftest.c
+configure:3287: $? = 0
+configure:3287: result: yes
+configure:3287: checking for ncurses.h
+configure:3287: result: yes
+configure:3299: checking for stdbool.h that conforms to C99
+configure:3366: gcc -c -g -O2  conftest.c >&5
+configure:3366: $? = 0
+configure:3373: result: yes
+configure:3375: checking for _Bool
+configure:3375: gcc -c -g -O2  conftest.c >&5
+configure:3375: $? = 0
+configure:3375: gcc -c -g -O2  conftest.c >&5
 conftest.c: In function 'main':
-conftest.c:58:20: error: expected expression before ')' token
-   58 | if (sizeof ((_Bool)))
+conftest.c:60:20: error: expected expression before ')' token
+   60 | if (sizeof ((_Bool)))
       |                    ^
-configure:3376: $? = 1
+configure:3375: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "FULL-PACKAGE-NAME"
@@ -237,6 +257,8 @@ configure: failed program was:
 | #define HAVE_UNISTD_H 1
 | #define HAVE_STDLIB_H 1
 | #define HAVE_STRING_H 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_NCURSES_H 1
 | /* end confdefs.h.  */
 | #include <stdio.h>
 | #ifdef HAVE_SYS_TYPES_H
@@ -279,16 +301,16 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:3376: result: yes
-configure:3391: checking for stdlib.h
-configure:3391: result: yes
-configure:3401: checking for GNU libc compatible malloc
-configure:3425: gcc -o conftest -g -O2   conftest.c -lncurses  >&5
-configure:3425: $? = 0
-configure:3425: ./conftest
-configure:3425: $? = 0
-configure:3435: result: yes
-configure:3565: creating ./config.status
+configure:3375: result: yes
+configure:3390: checking for stdlib.h
+configure:3390: result: yes
+configure:3400: checking for GNU libc compatible malloc
+configure:3424: gcc -o conftest -g -O2   conftest.c -lncurses  >&5
+configure:3424: $? = 0
+configure:3424: ./conftest
+configure:3424: $? = 0
+configure:3434: result: yes
+configure:3564: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -305,9 +327,9 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on aleks-solus
 
-config.status:799: creating Makefile
-config.status:799: creating config.h
-config.status:969: config.h is unchanged
+config.status:801: creating Makefile
+config.status:801: creating config.h
+config.status:971: config.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -335,9 +357,11 @@ ac_cv_env_target_alias_value=
 ac_cv_func_malloc_0_nonnull=yes
 ac_cv_header_inttypes_h=yes
 ac_cv_header_memory_h=yes
+ac_cv_header_ncurses_h=yes
 ac_cv_header_stdbool_h=yes
 ac_cv_header_stdc=yes
 ac_cv_header_stdint_h=yes
+ac_cv_header_stdio_h=yes
 ac_cv_header_stdlib_h=yes
 ac_cv_header_string_h=yes
 ac_cv_header_strings_h=yes
@@ -433,6 +457,8 @@ target_alias=''
 #define HAVE_UNISTD_H 1
 #define HAVE_STDLIB_H 1
 #define HAVE_STRING_H 1
+#define HAVE_STDIO_H 1
+#define HAVE_NCURSES_H 1
 #define HAVE__BOOL 1
 #define HAVE_STDLIB_H 1
 #define HAVE_MALLOC 1

@@ -2,6 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ncurses.h>
+#include "config.h"
+
+#if HAVE_MALLOC == 0
+  #error Must have malloc
+#endif
 
 int main(int argc, const char **argv) {
   char *profile = malloc(80*sizeof(char));
@@ -19,6 +24,7 @@ int main(int argc, const char **argv) {
   int cursorx;
 start:
   initscr();
+  erase();
   printw("Enter name of profile ('new' for new profile): ");
   attron(A_BOLD);
   refresh();

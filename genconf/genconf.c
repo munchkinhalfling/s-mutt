@@ -4,6 +4,11 @@
 #include <ncurses.h>
 #include "listprop.h"
 #include "strutils.h"
+#include "../config.h"
+
+#if HAVE_MALLOC == 0
+  #error Must have malloc
+#endif
 
 int main(int argc, char **argv) {
   char *properties[][2] = {
