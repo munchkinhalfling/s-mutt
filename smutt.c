@@ -2,11 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ncurses.h>
-#include "config.h"
+#include "confcheck.h"
 
-#if HAVE_MALLOC == 0
-  #error Must have malloc
-#endif
+
 
 int main(int argc, const char **argv) {
   char *profile = malloc(80*sizeof(char));
