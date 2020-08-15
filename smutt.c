@@ -17,6 +17,7 @@ int main(int argc, const char **argv) {
   char *smtp_pass = malloc(160*sizeof(char));
   int cursory;
   int cursorx;
+start:
   initscr();
   printw("Enter name of profile ('new' for new profile): ");
   attron(A_BOLD);
@@ -27,7 +28,7 @@ int main(int argc, const char **argv) {
   if(!strcmp(profile, "new")) {
     endwin();
     system("smutt.genconf");
-    exit(0);
+    goto start;
   }
   noecho();
   printw("Enter password for profile '%s': ", profile);
@@ -51,7 +52,7 @@ int main(int argc, const char **argv) {
   }
   
 
-  sprintf(profile_path, "%s/mutt-config/%s.muttrc", getenv("HOME"), profile);
+  sprintf(profile_path, "%s/.mutt-config/%s.muttrc", getenv("HOME"), profile);
   if((profile_file = fopen(profile_path, "r")) == NULL) {
     endwin();
     printf("Cannot open profile file. Please make sure it is at the path %s.", profile_path);

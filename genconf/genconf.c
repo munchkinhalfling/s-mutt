@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
   setprop(properties, "imap_user", quote(dummystr), 12);
   sprintf(longerdummystr, "\"smtp://%s@smtp.gmail.com:587\"", dummystr);
   setprop(properties, "smtp_url", longerdummystr, 12);
-  sprintf(profilepath, "%s/mutt-config/%s.muttrc", HOME, profilename);
+  sprintf(profilepath, "%s/.mutt-config/%s.muttrc", HOME, profilename);
   if((conf_file = fopen(profilepath, "w")) == NULL) {
     endwin();
     printf("Could not create configuration file at %s.\n", profilepath);
