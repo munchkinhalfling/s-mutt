@@ -2,6 +2,7 @@
 _A secure profile system for the Mutt text-based mail client_
 ## Installation
 > TL;DR `./configure && make && sudo make install`. \
+
 To install, first make sure that you have Mutt and ncurses installed: \
 _Fedora/RedHat_
 ```sh-script
