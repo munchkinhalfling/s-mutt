@@ -790,6 +790,14 @@ uninstall-am: uninstall-binPROGRAMS
 .PRECIOUS: Makefile
 
 
+package: all
+	cp smutt pkgdir/
+	cp smutt.genconf pkgdir/
+	cp -r pkgdir $(distdir)-bin
+	tar -c $(distdir)-bin -f $(distdir)-bin.tar
+	gzip $(distdir)-bin.tar
+	rm -rf $(distdir)-bin
+
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
