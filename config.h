@@ -14,8 +14,14 @@
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
 
+/* Define to 1 if you have the <ncurses.h> header file. */
+#define HAVE_NCURSES_H 1
+
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
@@ -38,26 +44,32 @@
 /* Define to 1 if the system has the type `_Bool'. */
 #define HAVE__BOOL 1
 
+/* Name of package */
+#define PACKAGE "smutt"
+
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+#define PACKAGE_BUGREPORT "munchkinhalfling@pm.me"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "FULL-PACKAGE-NAME"
+#define PACKAGE_NAME "smutt"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "FULL-PACKAGE-NAME VERSION"
+#define PACKAGE_STRING "smutt 1.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "full-package-name"
+#define PACKAGE_TARNAME "smutt"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "VERSION"
+#define PACKAGE_VERSION "1.0"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
+
+/* Version number of package */
+#define VERSION "1.0"
 
 /* Define to rpl_malloc if the replacement function should be used. */
 /* #undef malloc */
