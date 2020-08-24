@@ -1,0 +1,12 @@
+name: munchkinhalfling/s-mutt
+sourceType: git
+source: git://github.com/munchkinhalfling/s-mutt.git
+scripts:
+  build:
+    - ./configure --prefix=$(PREFIX)
+    - make
+  install:
+    - sudo make install
+bin:
+  smutt: bin/smutt
+  smutt.genconf: bin/smutt.genconf
