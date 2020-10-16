@@ -17,7 +17,7 @@ Then, `smutt` and `smutt.genconf` will be available in `/usr/bin`.
 Install [bettermake](https://github.com/munchkinhalfling/bettermake). \
 Then, clone this repository and run:
 ```sh
-$ bettermake
+$ bettermake build
 $ prefix=/usr sudo bettermake build install
 ```
 This will make `smutt` and `smutt.genconf` available in `/usr/bin`.
