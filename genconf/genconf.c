@@ -4,7 +4,6 @@
 #include <ncurses.h>
 #include "listprop.h"
 #include "strutils.h"
-#include "../confcheck.h"
 
 int main(int argc, char **argv) {
   char *properties[][2] = {
@@ -40,7 +39,7 @@ int main(int argc, char **argv) {
   getnstr(dummystr, 159);
   attroff(A_BOLD);
   setprop(properties, "realname", quote(dummystr), PROPSLEN);
-  puts("What is your Gmail email address? ");
+  printw("What is your Gmail email address? ");
   attron(A_BOLD);
   getnstr(dummystr, 159);
   attroff(A_BOLD);

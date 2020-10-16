@@ -1,0 +1,37 @@
+# Name to be shown in confirmation prompt
+name = "smutt";
+# Doesn't do anything yet
+author = "munchkinhalfling";
+
+# Shown if something goes wrong
+notify_dev_depends = ();
+notify_depends = ("Ncurses");
+# `app`-based packages to be installed first.
+depends = ();
+dev_depends = ("munchkinhalfling/bettermake");
+
+# A list of scripts for build and install.
+scripts:
+(
+    {
+        name = "build";
+        commands = ("prefix=$prefix bettermake build");
+    }
+);
+
+# $prefix is the install root
+install = ("bettermake build install");
+
+# Binaries (and other files) to symlink
+files = (
+    {
+        # Path to symlink to (with / being ~/.local/)
+        install_path = "/bin/smutt";
+        # Path to the file in the install root (with / being the install root)
+        pkg_path = "/bin/smutt";
+    },
+    {
+        install_path = "/bin/smutt.genconf";
+        pkg_path = "/bin/smutt.genconf"
+    }
+);

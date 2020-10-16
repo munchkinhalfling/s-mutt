@@ -3,10 +3,10 @@ sourceType: git
 source: git://github.com/munchkinhalfling/s-mutt.git
 scripts:
   build:
-    - ./configure --prefix=$(PREFIX)
-    - make
+    - bettermake build
   install:
-    - sudo make install
+    - prefix=/usr bettermake build
+depends: [munchkinhalfling/bettermake]
 bin:
   smutt: bin/smutt
   smutt.genconf: bin/smutt.genconf

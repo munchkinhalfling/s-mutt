@@ -2,9 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ncurses.h>
-#include "confcheck.h"
-
-
 
 int main(int argc, const char **argv) {
   char *profile = malloc(80*sizeof(char));
