@@ -14,6 +14,7 @@ tasks:
     description: Move binaries with correct names to bin/
     depends: [smutt, genconf]
     commands:
+      - mkdir -p bin
       - cp smutt bin/smutt
       - cp genconf/genconf bin/smutt.genconf
   - name: install
